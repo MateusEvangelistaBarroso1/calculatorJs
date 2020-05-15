@@ -1,0 +1,203 @@
+@charset "UTF8";
+*{margin: 0; padding: 0; font-family: sans-serif;}
+@keyframes bounce{
+	0%, 20%, 60%, 100%{
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	40%{
+		-webkit-transform: translateY(-40px);
+		transform: translateY(-40px);
+	}
+	80%{
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+body{
+
+    background-color: black;
+}
+header.hed{
+    position: absolute;
+}
+button{
+    border: none;	
+	padding: 14px;
+	margin: 10px;
+	font-size: 24px;
+	line-height: 24px;
+	border-radius: 10px;
+	position: relative;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition: all 400ms ease;
+	text-transform: uppercase;
+	font-family: sans-serif;
+}
+
+.git{
+    position: absolute;
+    top: 30px;
+    
+}
+.inst{
+    left: 730px;
+    top:280px;
+    background:yellow;
+   
+}
+.inst:before {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 0px;
+	height: 53px;
+	background: rgba(0,0,0,.4);
+	border-radius: 10px;
+    transition: all 2s ease	;
+   
+}
+
+.inst:hover:before{
+    width: 100%;
+   
+    
+}
+
+.git:hover{
+    animation: bounce 1s;
+}
+
+a{
+    text-transform: uppercase;
+    color: white;
+   text-decoration: none;
+}
+a:hover{
+    color: black;
+}
+
+#container{
+    width: 1000px;
+    height: 550px;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../canal.png');
+    margin: 20px auto;
+}
+
+#calculator{
+
+    width: 320px;
+    height: 520px;
+    background: #eaedef;
+    margin: 0 auto;
+    top: 20px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#result{
+    height: 120px;
+}
+
+p#time{
+    text-align: left;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 18px;
+    color: #000;
+}
+
+p#date{
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+   margin-top: -20px;
+    font-size: 18px;
+    color: #000;
+}
+
+#output{
+    text-align: right;
+    height: 60px;
+    margin: 20px 20px ;
+    font-size: 40px;
+}
+
+#keyboard{
+    height: 400px;
+}
+
+#keyboard button{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 22px;
+}
+button.null:focus{
+    outline: 0;
+}
+
+button.btn-ac{
+    background: red;
+    box-shadow: 1px 1px 4px #000;
+}
+.btn-ac:hover{
+    background: rgba(0,0,0,0);
+	color: red;
+	box-shadow: inset 0 0 0 3px red;
+}
+button.btn-ce{
+    background: #ffc600;
+    box-shadow: 1px 1px 6px #000;
+}
+.btn-ce:hover{
+    background: rgba(0,0,0,0);
+	color: #ffc600;
+	box-shadow: inset 0 0 0 4px #ffc600;
+}
+button.btn-igual{
+    background-color: royalblue;
+    box-shadow: 1px 1px 4px #000;
+}
+
+.btn-igual:hover{
+
+    background: rgba(0,0,0,0);
+    color: royalblue;
+    box-shadow: inset 0 0 0 3px royalblue;
+}
+
+.btn-divisao{
+
+    background-color: rgb(105, 2, 136);
+    box-shadow: 1px 1px 4px #000;
+    
+}
+.btn-multiplicacao{
+
+    background-color: rgb(105, 2, 136);
+    box-shadow: 1px 1px 4px #000;
+}
+.btn-porcento{
+
+    background-color: rgb(105, 2, 136);
+    box-shadow: 1px 1px 4px #000;
+}
+.btn-soma{
+
+    background-color: rgb(105, 2, 136);
+    box-shadow: 1px 1px 4px #000;
+}
+.btn-subtracao{
+
+    background-color: rgb(105, 2, 136);
+    box-shadow: 1px 1px 4px #000;
+}
